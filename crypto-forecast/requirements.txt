@@ -1,0 +1,9 @@
+Flask
+requests
+pandas
+numpy
+scikit-learn
+joblib
+pytrends
+matplotlib
+statsmodels

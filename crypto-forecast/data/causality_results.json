@@ -1,0 +1,136 @@
+{
+    "analysis": "Granger causality",
+    "dataset_file": "data/bitcoin_dataset.csv",
+    "target_column": "price_return",
+    "cause_column": "trend_change",
+    "max_lag": 7,
+    "interpretation_note": "This test evaluates predictive causality. It does not prove a true cause-effect relationship.",
+    "stationarity": {
+        "target": {
+            "series": "price_return",
+            "adf_statistic": -18.992744953495944,
+            "p_value": 0.0,
+            "used_lag": 0,
+            "n_observations": 339,
+            "is_stationary_5_percent": true
+        },
+        "cause": {
+            "series": "trend_change",
+            "adf_statistic": -4.423651127282647,
+            "p_value": 0.00026949467929387934,
+            "used_lag": 14,
+            "n_observations": 325,
+            "is_stationary_5_percent": true
+        },
+        "differencing_applied": false
+    },
+    "lag_results": [
+        {
+            "lag": 1,
+            "f_statistic": 2.4308672589834317,
+            "p_value": 0.11990842739003445,
+            "df_denom": 336.0,
+            "df_num": 1.0,
+            "significant_5_percent": false
+        },
+        {
+            "lag": 2,
+            "f_statistic": 2.5950983890414987,
+            "p_value": 0.0761475576156365,
+            "df_denom": 333.0,
+            "df_num": 2.0,
+            "significant_5_percent": false
+        },
+        {
+            "lag": 3,
+            "f_statistic": 2.6508232518359143,
+            "p_value": 0.04877559691371533,
+            "df_denom": 330.0,
+            "df_num": 3.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 4,
+            "f_statistic": 11.855209863875812,
+            "p_value": 5.257807094167509e-09,
+            "df_denom": 327.0,
+            "df_num": 4.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 5,
+            "f_statistic": 9.496560250541828,
+            "p_value": 1.82276595687461e-08,
+            "df_denom": 324.0,
+            "df_num": 5.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 6,
+            "f_statistic": 8.41042756401451,
+            "p_value": 1.7416741927730272e-08,
+            "df_denom": 321.0,
+            "df_num": 6.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 7,
+            "f_statistic": 7.8395382324183975,
+            "p_value": 9.120002913312163e-09,
+            "df_denom": 318.0,
+            "df_num": 7.0,
+            "significant_5_percent": true
+        }
+    ],
+    "best_lag_by_p_value": {
+        "lag": 4,
+        "f_statistic": 11.855209863875812,
+        "p_value": 5.257807094167509e-09,
+        "df_denom": 327.0,
+        "df_num": 4.0,
+        "significant_5_percent": true
+    },
+    "significant_lags_5_percent": [
+        {
+            "lag": 3,
+            "f_statistic": 2.6508232518359143,
+            "p_value": 0.04877559691371533,
+            "df_denom": 330.0,
+            "df_num": 3.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 4,
+            "f_statistic": 11.855209863875812,
+            "p_value": 5.257807094167509e-09,
+            "df_denom": 327.0,
+            "df_num": 4.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 5,
+            "f_statistic": 9.496560250541828,
+            "p_value": 1.82276595687461e-08,
+            "df_denom": 324.0,
+            "df_num": 5.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 6,
+            "f_statistic": 8.41042756401451,
+            "p_value": 1.7416741927730272e-08,
+            "df_denom": 321.0,
+            "df_num": 6.0,
+            "significant_5_percent": true
+        },
+        {
+            "lag": 7,
+            "f_statistic": 7.8395382324183975,
+            "p_value": 9.120002913312163e-09,
+            "df_denom": 318.0,
+            "df_num": 7.0,
+            "significant_5_percent": true
+        }
+    ],
+    "conclusion": "The variable trend_change provides statistically significant Granger predictive information for price_return at the 5% level for at least one tested lag."
+}

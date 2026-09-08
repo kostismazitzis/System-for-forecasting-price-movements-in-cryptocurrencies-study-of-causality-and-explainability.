@@ -1,0 +1,242 @@
+{
+    "analysis": "Logistic Regression coefficient explainability",
+    "model_file": "saved_models/bitcoin_direction_model.joblib",
+    "dataset_file": "data/bitcoin_dataset.csv",
+    "target_column": "target",
+    "interpretation": {
+        "positive_coefficients": "Increase the probability of class 1, interpreted as UP.",
+        "negative_coefficients": "Increase the probability of class 0, interpreted as DOWN.",
+        "note": "Because StandardScaler is used, coefficients are more comparable across features."
+    },
+    "top_positive_features": [
+        {
+            "feature": "volatility_14",
+            "coefficient": 0.6095525522067493,
+            "absolute_importance": 0.6095525522067493
+        },
+        {
+            "feature": "volume",
+            "coefficient": 0.5868174210505825,
+            "absolute_importance": 0.5868174210505825
+        },
+        {
+            "feature": "volume_ma_ratio_14",
+            "coefficient": 0.4979541687457599,
+            "absolute_importance": 0.4979541687457599
+        },
+        {
+            "feature": "trend_ma_ratio_14",
+            "coefficient": 0.4633487011637202,
+            "absolute_importance": 0.4633487011637202
+        },
+        {
+            "feature": "trend_change_lag_2",
+            "coefficient": 0.43908948123342906,
+            "absolute_importance": 0.43908948123342906
+        },
+        {
+            "feature": "volume_ma_7",
+            "coefficient": 0.40616657751755947,
+            "absolute_importance": 0.40616657751755947
+        },
+        {
+            "feature": "trades_change",
+            "coefficient": 0.403240217741648,
+            "absolute_importance": 0.403240217741648
+        },
+        {
+            "feature": "high_close_ratio",
+            "coefficient": 0.3387203220929564,
+            "absolute_importance": 0.3387203220929564
+        },
+        {
+            "feature": "low_close_ratio",
+            "coefficient": 0.33186318713053425,
+            "absolute_importance": 0.33186318713053425
+        },
+        {
+            "feature": "trend_change_lag_7",
+            "coefficient": 0.30287927954181837,
+            "absolute_importance": 0.30287927954181837
+        },
+        {
+            "feature": "volume_ma_3",
+            "coefficient": 0.21205708970773732,
+            "absolute_importance": 0.21205708970773732
+        },
+        {
+            "feature": "quote_asset_volume",
+            "coefficient": 0.2103411102128667,
+            "absolute_importance": 0.2103411102128667
+        },
+        {
+            "feature": "close",
+            "coefficient": 0.19701803105928545,
+            "absolute_importance": 0.19701803105928545
+        },
+        {
+            "feature": "volume_lag_1",
+            "coefficient": 0.159313240047867,
+            "absolute_importance": 0.159313240047867
+        },
+        {
+            "feature": "volume_lag_7",
+            "coefficient": 0.14436084218616274,
+            "absolute_importance": 0.14436084218616274
+        }
+    ],
+    "top_negative_features": [
+        {
+            "feature": "trend_change_lag_5",
+            "coefficient": -0.8110651607107364,
+            "absolute_importance": 0.8110651607107364
+        },
+        {
+            "feature": "trend_change_lag_3",
+            "coefficient": -0.6299698489355919,
+            "absolute_importance": 0.6299698489355919
+        },
+        {
+            "feature": "volume_ma_ratio_3",
+            "coefficient": -0.5791829923280067,
+            "absolute_importance": 0.5791829923280067
+        },
+        {
+            "feature": "volume_lag_3",
+            "coefficient": -0.5475760004145787,
+            "absolute_importance": 0.5475760004145787
+        },
+        {
+            "feature": "trend_volatility_14",
+            "coefficient": -0.5277622114409125,
+            "absolute_importance": 0.5277622114409125
+        },
+        {
+            "feature": "volatility_7",
+            "coefficient": -0.516427603151333,
+            "absolute_importance": 0.516427603151333
+        },
+        {
+            "feature": "taker_buy_quote_volume",
+            "coefficient": -0.4350284198443421,
+            "absolute_importance": 0.4350284198443421
+        },
+        {
+            "feature": "price_return_lag_2",
+            "coefficient": -0.38508462362863566,
+            "absolute_importance": 0.38508462362863566
+        },
+        {
+            "feature": "trend_volatility_7",
+            "coefficient": -0.3820501782366832,
+            "absolute_importance": 0.3820501782366832
+        },
+        {
+            "feature": "high_low_range",
+            "coefficient": -0.3607680223248139,
+            "absolute_importance": 0.3607680223248139
+        },
+        {
+            "feature": "volume_ma_14",
+            "coefficient": -0.34655487351968267,
+            "absolute_importance": 0.34655487351968267
+        },
+        {
+            "feature": "number_of_trades",
+            "coefficient": -0.3184316121059986,
+            "absolute_importance": 0.3184316121059986
+        },
+        {
+            "feature": "volume_log",
+            "coefficient": -0.2667219533036515,
+            "absolute_importance": 0.2667219533036515
+        },
+        {
+            "feature": "volume_lag_2",
+            "coefficient": -0.23278217287570488,
+            "absolute_importance": 0.23278217287570488
+        },
+        {
+            "feature": "trend_ma_14",
+            "coefficient": -0.21733442853779023,
+            "absolute_importance": 0.21733442853779023
+        }
+    ],
+    "top_features_by_absolute_importance": [
+        {
+            "feature": "trend_change_lag_5",
+            "coefficient": -0.8110651607107364,
+            "absolute_importance": 0.8110651607107364
+        },
+        {
+            "feature": "trend_change_lag_3",
+            "coefficient": -0.6299698489355919,
+            "absolute_importance": 0.6299698489355919
+        },
+        {
+            "feature": "volatility_14",
+            "coefficient": 0.6095525522067493,
+            "absolute_importance": 0.6095525522067493
+        },
+        {
+            "feature": "volume",
+            "coefficient": 0.5868174210505825,
+            "absolute_importance": 0.5868174210505825
+        },
+        {
+            "feature": "volume_ma_ratio_3",
+            "coefficient": -0.5791829923280067,
+            "absolute_importance": 0.5791829923280067
+        },
+        {
+            "feature": "volume_lag_3",
+            "coefficient": -0.5475760004145787,
+            "absolute_importance": 0.5475760004145787
+        },
+        {
+            "feature": "trend_volatility_14",
+            "coefficient": -0.5277622114409125,
+            "absolute_importance": 0.5277622114409125
+        },
+        {
+            "feature": "volatility_7",
+            "coefficient": -0.516427603151333,
+            "absolute_importance": 0.516427603151333
+        },
+        {
+            "feature": "volume_ma_ratio_14",
+            "coefficient": 0.4979541687457599,
+            "absolute_importance": 0.4979541687457599
+        },
+        {
+            "feature": "trend_ma_ratio_14",
+            "coefficient": 0.4633487011637202,
+            "absolute_importance": 0.4633487011637202
+        },
+        {
+            "feature": "trend_change_lag_2",
+            "coefficient": 0.43908948123342906,
+            "absolute_importance": 0.43908948123342906
+        },
+        {
+            "feature": "taker_buy_quote_volume",
+            "coefficient": -0.4350284198443421,
+            "absolute_importance": 0.4350284198443421
+        },
+        {
+            "feature": "volume_ma_7",
+            "coefficient": 0.40616657751755947,
+            "absolute_importance": 0.40616657751755947
+        },
+        {
+            "feature": "trades_change",
+            "coefficient": 0.403240217741648,
+            "absolute_importance": 0.403240217741648
+        },
+        {
+            "feature": "price_return_lag_2",
+            "coefficient": -0.38508462362863566,
+            "absolute_importance": 0.38508462362863566
+        }
+    ]
+}
